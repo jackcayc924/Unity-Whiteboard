@@ -1,0 +1,31 @@
+// TextureComputeShader.compute
+#pragma kernel CSMain
+
+// Texture and parameters
+RWTexture2D<float4> Result;
+int penSize;
+float4 penColor;
+int2 textureSize;
+int2 startPos;
+int2 endPos;
+
+[numthreads(8, 8, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    int2 pos = int2(id.xy);
+
+    // Check if the position is within the bounds of the texture
+    if (pos.x >= 0 && pos.x < textureSize.x && pos.y >= 0 && pos.y < textureSize.y)
+    {
+        // Calculate the distance from the start position
+        float distance = length(float2(pos) - float2(startPos));
+        float maxDistance = length(float2(endPos) - float2(startPos));
+
+        // Interpolate the color based on the distance
+        float t = distance / maxDistance;
+        float4 color = lerp(penColor, Result[pos], t);
+
+        // Set the pixel color
+        Result[pos] = color;
+    }
+}

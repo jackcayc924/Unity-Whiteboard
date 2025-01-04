@@ -1,0 +1,16 @@
+{
+    "name": "JackCayc924.Whiteboard.Editor",
+    "rootNamespace": "JackCayc924.Whiteboard.Editor",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

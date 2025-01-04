@@ -1,0 +1,34 @@
+{
+    "name": "me.jackcayc924.whiteboard",
+    "displayName": "Whiteboard",
+    "version": "0.1.0", 
+    "unity": "2021.3",
+    "description": "Whiteboard capability",
+    "keywords": [],
+    "category": "Unity", 
+    "samples": [
+        {
+          "displayName": "Whiteboard Basic",
+          "description": "An example of the whiteboard, no CARVR",
+          "path": "Samples~/Whiteboard_Basic"
+        },
+        {
+          "displayName": "Whiteboard Basic NETWORKING",
+          "description": "An example of the whiteboard with NETWORKING",
+          "path": "Samples~/Whiteboard_Basic_CARVR"
+        },
+        {
+          "displayName": "Whiteboard Basic URP",
+          "description": "An example of the whiteboard with URP,",
+          "path": "Samples~/Whiteboard_Basic_URP"
+        },
+        {
+          "displayName": "Whiteboard Basic URP NETWORKING",
+          "description": "An example of the whiteboard with URP",
+          "path": "Samples~/Whiteboard_Basic_URP_CARVR"
+        }
+      ],
+    "dependencies": {
+        
+    }
+}
