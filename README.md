@@ -20,7 +20,7 @@ Welcome to Unity-Whiteboard! This whiteboard networking tool was originally deve
 <br><br><b>Work in Progress: This project is currently in a heavy active development phase, and features may change frequently. As a result, support may be limited, and users should expect updates that could impact functionality.
 </b>
 
-<video src="./~Sources/FrontPageSample.mp4" controls width="1280" height="720"></video>
+[Watch Demo Video](./~Sources/FrontPageSample.mp4)
 
 
 ## 🎨 Features
